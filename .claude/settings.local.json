@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"D:\\\\NestJS\\\\school-management\\\\backend\\\\auth-service\\\\target\\\\classes\\\\com\\\\school\\\\auth\\\\config\\\\SecurityConfig.class\"\\); $text = [System.Text.Encoding]::ASCII.GetString\\($bytes\\); if \\($text -match \"antMatcher\"\\) { \"FOUND antMatcher\" } else { \"NO antMatcher in class\" }; if \\($text -match \"/api/v1/auth/login\"\\) { \"FOUND /api/v1/auth/login\" } else { \"NO /api/v1/auth/login\" })",
+      "Bash(curl -sS --path-as-is \"http://localhost:8081/api/v1/auth/login\" -i)",
+      "Bash(curl -sS \"http://127.0.0.1:8081/api/v1/auth/login\" -i)",
+      "Bash(javap -v -p target/classes/com/school/auth/config/SecurityConfig.class)",
+      "PowerShell($src = Get-Item \"D:\\\\NestJS\\\\school-management\\\\backend\\\\common-lib\\\\src\\\\main\\\\java\\\\com\\\\school\\\\common\\\\audit\\\\BaseEntity.java\"; $cls = Get-Item \"D:\\\\NestJS\\\\school-management\\\\backend\\\\common-lib\\\\target\\\\classes\\\\com\\\\school\\\\common\\\\audit\\\\BaseEntity.class\" -ErrorAction SilentlyContinue; \"SOURCE  : $\\($src.LastWriteTime\\)\"; if \\($cls\\) { \"COMPILED: $\\($cls.LastWriteTime\\)\"; if \\($cls.LastWriteTime -lt $src.LastWriteTime\\) { \">>> STALE: la classe compilée est plus ANCIENNE que la source\" } else { \">>> compiled is newer/equal\" } } else { \"COMPILED: introuvable \\(pas encore compilé\\)\" })"
+    ]
+  }
+}
